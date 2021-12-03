@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav>
+      <div class="left-side">
+        <img src="images/logo.png">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Blog</a></li>
+        </ul>
+      </div>
+      <div class="right-side">
+        <a href="">Contact Me</a>
+      </div>
+    </nav>
+    <center>
+      <form class="form-container">
+        <div>
+          <label for="name" class="form-label">Name</label>
+          <input id="name" type="text" name="name" class="form-input">
+        </div>
+        <div>
+          <label for="email" class="form-label">Email</label>
+          <input id="email" type="email" name="email" class="form-input">
+        </div>
+        <div>
+          <label for="phone" class="form-label">Phone Number</label>
+          <input id="phone" type="tel" name="phone" class="form-input">
+        </div>
+        <div>
+          <label for="subject" class="form-label">Subject</label>
+          <select id="subject" class="form-input">
+            <option value="hiring">Hiring</option>
+            <option value="collaborate">Let's Collaborate</option>
+            <option value="talk">Let's Talk</option>
+          </select>
+        </div>
+        <div>
+          <label for="message" class="form-label">Your Message</label>
+          <textarea id="message" name="message" cols="30" rows="5" class="form-input"></textarea>
+        </div>
+        <button class="btn-submit" type="button" onclick="submitData()">Submit</button>
+
+        <script src="contact.js"></script>
+      </form>
+    </center>
+  </body>
+</html>
